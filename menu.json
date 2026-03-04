@@ -10,7 +10,7 @@
                 "description": "Pan, carne de res, ensalada de la casa, mucho queso, tocineta ahumada, tomate, papa triturada, cebolla y salsas al gusto.",
                 "price": 21000,
                 "icon": "🍔",
-                "image":"images/hamburguesa-sencilla.jpg"
+                "image":"images/burgerespecial.png"
             },
             {
                 "id": "tradi-2",
@@ -18,7 +18,7 @@
                 "description": "Pan, 2 carne de res, ensaladade la casa, mucho queso x2, 2tocineta ahumada, tomate, papa triturada, cebolla y salsas al gusto.",
                 "price": 27000,
                 "icon": "🍔",
-                "image":"images/hamburguesa-sencilla.jpg"
+                "image":"images/burgersuper.png"
             },
             {
                 "id": "tradi-3",
@@ -26,7 +26,7 @@
                 "description": "Pan, carne de res, ensaladade la casa, tomate, papa triturada, cebolla y salsas al gusto.",
                 "price": 17000,
                 "icon": "🍔",
-                "image":"images/hamburguesa-sencilla.jpg"
+                "image":"images/burgersencilla.png"
             }
         ]
     },
@@ -41,7 +41,7 @@
                 "description": "Pan artesanal, carne artesanal deres, ensalada de la casa, mucho queso, tocineta ahumada, tomate,papa triturada, cebolla y salsas al gusto.",
                 "price": 23500,
                 "icon": "🍔",
-                "image":"images/hamburguesa-sencilla.jpg"
+                "image":"images/burgerartesanal.png"
             },
             {
                 "id": "burger-2",
@@ -49,7 +49,7 @@
                 "description": "Pan, carne de res, hamburguesa de pollo apanada, mucho queso x2, 2 tocinetas ahumadas, ensalada de la casa, tomate, papa triturada, cebolla y salsas al gusto.",
                 "price": 29000,
                 "icon": "🍔",
-                "image":"images/hamburguesa-sencilla.jpg"
+                "image":"images/burgersupermixta.png"
             },
             {
                 "id": "burger-3",
@@ -57,7 +57,7 @@
                 "description": "Pan, hamburguesa apanada de pollo, ensalada de la casa, mucho queso , tocineta ahumada, tomate, papa triturada, cebolla y salsas al gusto.",
                 "price": 23500,
                 "icon": "🍔",
-                "image":"images/hamburguesa-sencilla.jpg"
+                "image":"images/burgerpollo.png"
             }
         ]
     },
@@ -72,7 +72,7 @@
                 "description": "Pan, salchicha long zenu,ensalada de la casa, mucho queso, 2 tocineta ahumada,papa triturada, cebolla y salsas al gusto.",
                 "price": 21000,
                 "icon": "🌭",
-                "image":"images/hamburguesa-sencilla.jpg"
+                "image":"images/perroespecial.png"
             },
             {
                 "id": "dog-2",
@@ -104,7 +104,7 @@
                 "description": "Pan, 3 tocinetas ahumadas, mucho Queso ensalada de la casa, papa triturada, cebolla y salsas al gusto .",
                 "price": 21000,
                 "icon": "🌭",
-                "image":"images/hamburguesa-sencilla.jpg"
+                "image":"images/perra.png"
             }
         ]
     },
@@ -119,7 +119,7 @@
                 "description": "-300grs. de papa frita - costilla ahumada - salchicha americana - chorizo santarrosano - tocineta ahumada picada - queso mozarella - papa cabello de angel - nuestras salsas.",
                 "price": 45000,
                 "icon": "🍟",
-                "image":"images/hamburguesa-sencilla.jpg"
+                "image":"images/chanchipapa.png"
             },
             {
                 "id": "salchi-2",
@@ -127,7 +127,7 @@
                 "description": "- 150 grs. papa - costilla ahumada - chorizo santarrosano - tocineta picada - papa cabello de angel - queso mozarella y nuestras salsas",
                 "price": 24000,
                 "icon": "🍟",
-                "image":"images/hamburguesa-sencilla.jpg"
+                "image":"images/porkypocket.png"
             },
             {
                 "id": "salchi-3",
@@ -135,7 +135,7 @@
                 "description": "- maiz tierno - costilla ahumada - chorizo santarrosano - tocineta picada - papa cabello de angel - queso mozarella y nuestras salsas.",
                 "price": 24000,
                 "icon": "🍟",
-                "image":"images/hamburguesa-sencilla.jpg"
+                "image":"images/desgranado.png"
             },
             {
                 "id": "salchi-4",
@@ -143,7 +143,7 @@
                 "description": "150grs de papas.",
                 "price": 8500,
                 "icon": "🍟",
-                "image":"images/hamburguesa-sencilla.jpg"
+                "image":"images/papas.png"
             },
             {
                 "id": "salchi-5",
@@ -151,54 +151,54 @@
                 "description": "150grs de papas con queso cheddar y tocineta.",
                 "price": 12000,
                 "icon": "🍟",
-                "image":"images/hamburguesa-sencilla.jpg"
+                "image":"images/papas.png"
             }
         ]
     },
     {
         "id": 5,
         "name": "Combos",
-        "icon": "🍺",
+        "icon": "🍱",
         "products": [
             {
                 "id": "combo-1",
                 "name": "Personal",
                 "description": "Hamburguesa especial,porción papas (150grs.,gaseosa 250ml. postobon",
                 "price": 30000,
-                "icon": "🍺",
-                "image":"images/hamburguesa-sencilla.jpg"
+                "icon": "🍱",
+                "image":"images/combopersonal.png"
             },
             {
                 "id": "combo-2",
                 "name": "Personal Artesanal",
                 "description": "Hamburguesa especial artesanal ,porción papas (150grs.),gaseosa 250ml. postobon. ",
                 "price": 32000,
-                "icon": "🍺",
-                "image":"images/hamburguesa-sencilla.jpg"
+                "icon": "🍱",
+                "image":"images/coomboartesanal.png"
             },
             {
                 "id": "combo-3",
                 "name": "Perro Especial",
                 "description": "perro especial, porción papas (150grs.), gaseosa 250ml. postobon. ",
                 "price": 30000,
-                "icon": "🍺",
-                "image":"images/hamburguesa-sencilla.jpg"
+                "icon": "🍱",
+                "image":"images/comboperroespecial.png"
             },
             {
                 "id": "combo-4",
                 "name": "Dou",
                 "description": "2 Hamburguesa especial, 2 porción papas (150grs.), 2 gaseosa 250ml. postobon. ",
                 "price": 60000,
-                "icon": "🍺",
-                "image":"images/hamburguesa-sencilla.jpg"
+                "icon": "🍱",
+                "image":"images/comboduo.png"
             },
             {
                 "id": "combo-5",
                 "name": "Parche",
                 "description": "4 Hamburguesa especial, 2 porción papas (150grs.), 1 gaseosa 1.5 l. postobon.",
                 "price": 103000,
-                "icon": "🍺",
-                "image":"images/hamburguesa-sencilla.jpg"
+                "icon": "🍱",
+                "image":"images/comboparche.png"
             }
         ]
     },
