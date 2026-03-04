@@ -6,7 +6,7 @@
 // ── Config ──────────────────────────────────────────────────
 const CONFIG = {
     restaurantName: "Sir.Burger",
-    whatsappNumber: "573215552545",
+    whatsappNumber: "573215552545 ",
     currency: "$",
     branches: [
         { id: 1, name: "Sede Laureles",    desc: "Conjunto al Oxxo",                    icon: "🏪" },
@@ -345,7 +345,7 @@ function quickAddToCart(productId) {
     }
     const existing = cart.find(i => i.id === productId);
     if (existing) existing.quantity += 1;
-    else cart.push({ id: product.id, name: product.name, price: product.price, icon: product.icon || '🍽️', quantity: 1 });
+    else cart.push({ id: product.id, name: product.name, price: product.price, icon: product.icon || '🍽️', image: product.image || null, quantity: 1 });
 
     saveCartToStorage();
     updateCartUI();
@@ -399,7 +399,7 @@ function updateCartUI() {
             const el = document.createElement('div');
             el.className = 'cart-item';
             el.innerHTML = `
-                <div class="cart-item-icon">${item.icon}</div>
+                <div class="cart-item-icon">${item.image ? `<img src="${item.image}" alt="${item.name}" class="cart-item-img">` : item.icon}</div>
                 <div class="cart-item-info">
                     <div class="cart-item-name">${item.name}</div>
                     <div class="cart-item-unit">${CONFIG.currency}${formatPrice(item.price)} c/u</div>
@@ -534,7 +534,7 @@ function handleCheckoutSubmit(e) {
     if (!zone || !payment) { showToast('Completa todos los campos', 'warning'); return; }
 
     const msg = buildMessage({ name, phone, address, notes, zone, payment, branch });
-    window.open(`https://wa.me/${CONFIG.whatsappNumber.trim()}?text=${encodeURIComponent(msg)}`, '_blank');
+    window.open(`https://wa.me/${CONFIG.whatsappNumber}?text=${encodeURIComponent(msg)}`, '_blank');
 
     setTimeout(() => {
         cart = [];
