@@ -1,0 +1,303 @@
+[
+    {
+        "id": 1,
+        "name": "Hamburguesas Tradicionales",
+        "icon": "🍔",
+        "products": [
+            {
+                "id": "tradi-1",
+                "name": "Hamburguesa Especial",
+                "description": "Pan, carne de res, ensalada de la casa, mucho queso, tocineta ahumada, tomate, papa triturada, cebolla y salsas al gusto.",
+                "price": 21000,
+                "icon": "🍔",
+                "image":"images/hamburguesa-sencilla.jpg"
+            },
+            {
+                "id": "tradi-2",
+                "name": "Hamburguesa Super",
+                "description": "Pan, 2 carne de res, ensaladade la casa, mucho queso x2, 2tocineta ahumada, tomate, papa triturada, cebolla y salsas al gusto.",
+                "price": 27000,
+                "icon": "🍔",
+                "image":"images/hamburguesa-sencilla.jpg"
+            },
+            {
+                "id": "tradi-3",
+                "name": "Hamburguesa Sencilla",
+                "description": "Pan, carne de res, ensaladade la casa, tomate, papa triturada, cebolla y salsas al gusto.",
+                "price": 17000,
+                "icon": "🍔",
+                "image":"images/hamburguesa-sencilla.jpg"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Hamburguesas Nuevas",
+        "icon": "🍔",
+        "products": [
+            {
+                "id": "burger-1",
+                "name": "Hamburguesa Artesanal",
+                "description": "Pan artesanal, carne artesanal deres, ensalada de la casa, mucho queso, tocineta ahumada, tomate,papa triturada, cebolla y salsas al gusto.",
+                "price": 23500,
+                "icon": "🍔",
+                "image":"images/hamburguesa-sencilla.jpg"
+            },
+            {
+                "id": "burger-2",
+                "name": "Hamburguesa Super Mixta",
+                "description": "Pan, carne de res, hamburguesa de pollo apanada, mucho queso x2, 2 tocinetas ahumadas, ensalada de la casa, tomate, papa triturada, cebolla y salsas al gusto.",
+                "price": 29000,
+                "icon": "🍔",
+                "image":"images/hamburguesa-sencilla.jpg"
+            },
+            {
+                "id": "burger-3",
+                "name": "Hamburguesa Pollo",
+                "description": "Pan, hamburguesa apanada de pollo, ensalada de la casa, mucho queso , tocineta ahumada, tomate, papa triturada, cebolla y salsas al gusto.",
+                "price": 23500,
+                "icon": "🍔",
+                "image":"images/hamburguesa-sencilla.jpg"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Perros Calientes",
+        "icon": "🌭",
+        "products": [
+            {
+                "id": "dog-1",
+                "name": "Perro Especial",
+                "description": "Pan, salchicha long zenu,ensalada de la casa, mucho queso, 2 tocineta ahumada,papa triturada, cebolla y salsas al gusto.",
+                "price": 21000,
+                "icon": "🌭",
+                "image":"images/hamburguesa-sencilla.jpg"
+            },
+            {
+                "id": "dog-2",
+                "name": "Perro Grande",
+                "description": "Pan, salchicha long de zenu, ensalada de la casa, mucho queso, papa triturada, cebolla y salsas al gusto.",
+                "price": 17000,
+                "icon": "🌭",
+                "image":"images/hamburguesa-sencilla.jpg"
+            },
+            {
+                "id": "dog-3",
+                "name": "Perro Pequeño (Niño)",
+                "description": "pan pequeño, saalchicha p.o.p. pequeña de zenu, mucho queso, ensalada de la casa, papa triturada, cebolla y salsas al gusto.",
+                "price": 15000,
+                "icon": "🌭",
+                "image":"images/hamburguesa-sencilla.jpg"
+            },
+            {
+                "id": "dog-4",
+                "name": "Perro Americano",
+                "description": "Pan, salchicha americana de zenu, ensalada de la casa, mucho queso, 1 tocineta ahumada, papa triturada, cebolla y salsas al gusto .",
+                "price": 21000,
+                "icon": "🌭",
+                "image":"images/hamburguesa-sencilla.jpg"
+            },
+            {
+                "id": "dog-5",
+                "name": "Perra (Sin Salchicha)",
+                "description": "Pan, 3 tocinetas ahumadas, mucho Queso ensalada de la casa, papa triturada, cebolla y salsas al gusto .",
+                "price": 21000,
+                "icon": "🌭",
+                "image":"images/hamburguesa-sencilla.jpg"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Salchiipapa y Desgranado",
+        "icon": "🍟",
+        "products": [
+            {
+                "id": "salchi-1",
+                "name": "Chanchipapa",
+                "description": "-300grs. de papa frita - costilla ahumada - salchicha americana - chorizo santarrosano - tocineta ahumada picada - queso mozarella - papa cabello de angel - nuestras salsas.",
+                "price": 45000,
+                "icon": "🍟",
+                "image":"images/hamburguesa-sencilla.jpg"
+            },
+            {
+                "id": "salchi-2",
+                "name": "Porky Pocket",
+                "description": "- 150 grs. papa - costilla ahumada - chorizo santarrosano - tocineta picada - papa cabello de angel - queso mozarella y nuestras salsas",
+                "price": 24000,
+                "icon": "🍟",
+                "image":"images/hamburguesa-sencilla.jpg"
+            },
+            {
+                "id": "salchi-3",
+                "name": "Desgranado",
+                "description": "- maiz tierno - costilla ahumada - chorizo santarrosano - tocineta picada - papa cabello de angel - queso mozarella y nuestras salsas.",
+                "price": 24000,
+                "icon": "🍟",
+                "image":"images/hamburguesa-sencilla.jpg"
+            },
+            {
+                "id": "salchi-4",
+                "name": "Porción Papas Sencilla",
+                "description": "150grs de papas.",
+                "price": 8500,
+                "icon": "🍟",
+                "image":"images/hamburguesa-sencilla.jpg"
+            },
+            {
+                "id": "salchi-5",
+                "name": "Porción Papas Full",
+                "description": "150grs de papas con queso cheddar y tocineta.",
+                "price": 12000,
+                "icon": "🍟",
+                "image":"images/hamburguesa-sencilla.jpg"
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "name": "Combos",
+        "icon": "🍺",
+        "products": [
+            {
+                "id": "combo-1",
+                "name": "Personal",
+                "description": "Hamburguesa especial,porción papas (150grs.,gaseosa 250ml. postobon",
+                "price": 30000,
+                "icon": "🍺",
+                "image":"images/hamburguesa-sencilla.jpg"
+            },
+            {
+                "id": "combo-2",
+                "name": "Personal Artesanal",
+                "description": "Hamburguesa especial artesanal ,porción papas (150grs.),gaseosa 250ml. postobon. ",
+                "price": 32000,
+                "icon": "🍺",
+                "image":"images/hamburguesa-sencilla.jpg"
+            },
+            {
+                "id": "combo-3",
+                "name": "Perro Especial",
+                "description": "perro especial, porción papas (150grs.), gaseosa 250ml. postobon. ",
+                "price": 30000,
+                "icon": "🍺",
+                "image":"images/hamburguesa-sencilla.jpg"
+            },
+            {
+                "id": "combo-4",
+                "name": "Dou",
+                "description": "2 Hamburguesa especial, 2 porción papas (150grs.), 2 gaseosa 250ml. postobon. ",
+                "price": 60000,
+                "icon": "🍺",
+                "image":"images/hamburguesa-sencilla.jpg"
+            },
+            {
+                "id": "combo-5",
+                "name": "Parche",
+                "description": "4 Hamburguesa especial, 2 porción papas (150grs.), 1 gaseosa 1.5 l. postobon.",
+                "price": 103000,
+                "icon": "🍺",
+                "image":"images/hamburguesa-sencilla.jpg"
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "name": "Bebidas",
+        "icon": "🥤",
+        "products": [
+            {
+                "id": "beb-1",
+                "name": "Gaseosa 400 Ml",
+                "description": "",
+                "price": 6000,
+                "icon": "🥤"
+            },
+            {
+                "id": "beb-2",
+                "name": "Jugo Hit 500 Ml",
+                "description": "",
+                "price": 6000,
+                "icon": "🧃"
+            },
+            {
+                "id": "beb-3",
+                "name": "Agua",
+                "description": "",
+                "price": 6000,
+                "icon": "💧"
+            },
+            {
+                "id": "beb-4",
+                "name": "Gaseosa 1.5 L",
+                "description": "",
+                "price": 10000,
+                "icon": "🍾"
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "name": "ADICIONES",
+        "icon": "+",
+        "products": [
+            {
+    "id": "adi-1",
+    "name": "Carne",
+    "description": "",
+    "price": 6000,
+    "icon": "🥩"
+            },
+            {
+                "id": "adi-2",
+                "name": "Carne Artesanal",
+                "description": "",
+                "price": 8000,
+                "icon": "🍖"
+            },
+            {
+                "id": "adi-3",
+                "name": "Pollo Apanado",
+                "description": "",
+                "price": 8000,
+                "icon": "🍗"
+            },
+            {
+                "id": "adi-4",
+                "name": "Ensalada",
+                "description": "",
+                "price": 4500,
+                "icon": "🥗"
+            },
+            {
+                "id": "adi-5",
+                "name": "Tocineta",
+                "description": "",
+                "price": 5000,
+                "icon": "🥓"
+            },
+            {
+                "id": "adi-6",
+                "name": "Queso",
+                "description": "",
+                "price": 5000,
+                "icon": "🧀"
+            },
+            {
+                "id": "adi-7",
+                "name": "Salchicha Americana Zenú",
+                "description": "",
+                "price": 5500,
+                "icon": "🌭"
+            },
+            {
+                "id": "adi-8",
+                "name": "Salchicha Long Zenú",
+                "description": "",
+                "price": 5000,
+                "icon": "🌭"
+            }
+        ]
+    }
+]

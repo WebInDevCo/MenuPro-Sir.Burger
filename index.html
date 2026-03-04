@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sir.Burger</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=DM+Sans:wght@300;400;500;600&family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- CURSOR -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursorFollower"></div>
+
+    <!-- LOADER -->
+    <div class="loader" id="loader">
+        <div class="loader-inner">
+            <img class="loader-logo-img" src="logo.png" alt="Sir.Burger">
+            <div class="loader-bar"><div class="loader-progress" id="loaderProgress"></div></div>
+            <div class="loader-label">Eligiendo tu mejor experiencia...</div>
+        </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-inner">
+            <div class="nav-logo">
+                <img class="nav-logo-img" src="logo.png" alt="Sir.Burger">
+                <div class="nav-logo-text">
+                    <span class="nav-logo-main">Sir.Burger</span>
+                    <span class="nav-logo-sub">Tu receta favorita</span>
+                </div>
+            </div>
+            <div class="nav-center" id="navCategories"></div>
+            <div class="nav-right">
+                <button class="nav-cart-btn" id="navCartBtn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
+                        <line x1="3" y1="6" x2="21" y2="6"/>
+                        <path d="M16 10a4 4 0 01-8 0"/>
+                    </svg>
+                    <span class="nav-cart-badge" id="navCartBadge">0</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="hero-bg-gradient"></div>
+            <div class="hero-bg-grain"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-logo-wrap" data-aos>
+                <img class="hero-logo" src="logo.png" alt="Sir.Burger">
+            </div>
+            <div class="hero-eyebrow" data-aos data-aos-delay="100">
+                <span class="eyebrow-line"></span>
+                <span>Armenia, Quindío</span>
+                <span class="eyebrow-dot">·</span>
+                <span>Tu receta favorita</span>
+                <span class="eyebrow-line"></span>
+            </div>
+            <h1 class="hero-title" data-aos data-aos-delay="200">
+                <span class="ht-top">Sir.</span>
+                <span class="ht-mid"><em>Burger</em></span>
+            </h1>
+            <p class="hero-sub" data-aos data-aos-delay="280">
+                Tu Receta favorita
+            </p>
+            <div class="hero-actions" data-aos data-aos-delay="380">
+                <button class="btn-primary" onclick="scrollToCategories()">
+                    Ver el Menú
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+                </button>
+                <div class="hero-badge">
+                    <span class="hero-badge-dot"></span>
+                    Pedidos a domicilio
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <div class="scroll-line"></div>
+            <span class="scroll-label">Scroll</span>
+        </div>
+        <div class="hero-float-1">Sir.</div>
+        <div class="hero-float-2">Burger</div>
+    </header>
+
+    <!-- CATEGORIES SECTION -->
+    <section class="cat-section" id="categoriesSection">
+        <div class="cat-header" data-aos>
+            <div class="section-eyebrow">Nuestra Carta</div>
+            <h2 class="section-title">¿Qué te quieres<br><em>comer hoy?</em></h2>
+        </div>
+        <div class="cat-grid" id="categoriesGrid"></div>
+    </section>
+
+    <!-- PRODUCTS SECTION -->
+    <section class="prod-section" id="productsSection">
+        <div class="prod-tabs-wrap" id="prodTabsWrap">
+            <div class="prod-tabs" id="productsTabs"></div>
+        </div>
+        <div class="prod-grid" id="productsGrid"></div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <img class="footer-logo-img" src="logo.png" alt="Sir.Burger">
+                <p class="footer-desc"></p>
+                <div class="footer-social">
+                    <a class="footer-social-btn" href="#">📸 Instagram</a>
+                </div>
+            </div>
+            <div class="footer-nav">
+                <div class="footer-col">
+                    <div class="footer-col-title">Categorías</div>
+                    <div id="footerCats"></div>
+                </div>
+                <div class="footer-col">
+                    <div class="footer-col-title">Información</div>
+                    <div class="footer-col-link">Domicilios</div>
+                    <div class="footer-col-link">Menú QR para mesas</div>
+                    <div class="footer-col-link">Armenia, Quindío</div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2026 Sir.Burger · Todos los derechos reservados</span>
+            <span>
+  Desarrollado por 
+  <strong>
+    <a href="https://www.instagram.com/web_indev?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer">
+      Webindev
+    </a>
+  </strong>
+</span>
+        </div>
+    </footer>
+
+    <!-- FLOATING CART -->
+    <button class="floating-cart" id="floatingCart">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <path d="M16 10a4 4 0 01-8 0"/>
+        </svg>
+        <span class="floating-cart-badge" id="cartBadge">0</span>
+    </button>
+
+    <!-- CART PANEL -->
+    <div class="cart-panel" id="cartPanel">
+        <div class="cart-overlay" id="cartOverlay"></div>
+        <div class="cart-sidebar">
+            <div class="cart-header">
+                <div>
+                    <div class="cart-title">Tu Pedido</div>
+                    <div class="cart-count" id="cartCount">0 productos</div>
+                </div>
+                <button class="cart-close" id="closeCart">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="cart-body" id="cartBody">
+                <div class="cart-empty" id="cartEmpty">
+                    <div class="cart-empty-icon">🛒</div>
+                    <div class="cart-empty-title">Carrito vacío</div>
+                    <div class="cart-empty-sub">Agrega algo delicioso</div>
+                </div>
+            </div>
+            <div class="cart-footer" id="cartFooter" style="display:none">
+                <div class="cart-total-row">
+                    <span>Subtotal</span>
+                    <span class="cart-total-amt" id="cartTotal">$0</span>
+                </div>
+                <button class="cart-cta" id="checkoutBtn">
+                    Finalizar Pedido
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- CHECKOUT MODAL -->
+    <div class="modal" id="checkoutModal">
+        <div class="modal-overlay" id="modalOverlay"></div>
+        <div class="modal-panel">
+            <div class="modal-header">
+                <div class="modal-title">Finalizar Pedido</div>
+                <button class="modal-close" id="closeModal">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="checkoutForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label">Nombre completo *</label>
+                            <input class="form-input" type="text" id="customerName" required placeholder="Juan García">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Teléfono *</label>
+                            <input class="form-input" type="tel" id="customerPhone" required placeholder="3001234567">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Dirección de entrega *</label>
+                        <textarea class="form-input form-textarea" id="customerAddress" required placeholder="Calle, número, barrio, referencias..."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Observaciones</label>
+                        <textarea class="form-input form-textarea" id="orderNotes" placeholder="Sin cebolla, término 3/4..."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Sede *</label>
+                        <div class="radio-grid" id="branchSelector"></div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Zona de entrega *</label>
+                        <div class="radio-grid" id="deliveryZones"></div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Método de pago *</label>
+                        <div class="radio-grid">
+                            <label class="radio-card">
+                                <input type="radio" name="paymentMethod" value="Transferencia" required>
+                                <div class="radio-inner"><span>💳</span><span>Transferencia</span></div>
+                            </label>
+                            <label class="radio-card">
+                                <input type="radio" name="paymentMethod" value="Contraentrega">
+                                <div class="radio-inner"><span>💵</span><span>Contraentrega</span></div>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="order-summary" id="orderSummary"></div>
+                    <button type="submit" class="modal-submit">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="white">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+                        </svg>
+                        Confirmar y Enviar por WhatsApp
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- TOAST -->
+    <div class="toast-wrap" id="toastWrap"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
