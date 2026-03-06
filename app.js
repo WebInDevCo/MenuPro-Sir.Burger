@@ -60,10 +60,32 @@ function initLoader() {
         if (width >= 100) { width = 100; clearInterval(iv); }
         progress.style.width = width + '%';
     }, 120);
-    setTimeout(() => {
-        loader.classList.add('hidden');
-        setTimeout(() => loader.remove(), 1000);
-    }, 1800);
+
+    function hideLoader() {
+        width = 100;
+        clearInterval(iv);
+        progress.style.width = '100%';
+        setTimeout(() => {
+            loader.classList.add('hidden');
+            setTimeout(() => loader.remove(), 1000);
+        }, 200);
+    }
+
+    // Cierra cuando la página cargó, con un mínimo de 600ms para la animación
+    const minDelay = 600;
+    const startTime = Date.now();
+
+    if (document.readyState === 'complete') {
+        const elapsed = Date.now() - startTime;
+        setTimeout(hideLoader, Math.max(0, minDelay - elapsed));
+    } else {
+        window.addEventListener('load', () => {
+            const elapsed = Date.now() - startTime;
+            setTimeout(hideLoader, Math.max(0, minDelay - elapsed));
+        }, { once: true });
+        // Fallback: nunca esperar más de 2.5s
+        setTimeout(hideLoader, 2500);
+    }
 }
 
 // ============================================================
@@ -72,18 +94,42 @@ function initLoader() {
 function initCursor() {
     const cursor   = document.getElementById('cursor');
     const follower = document.getElementById('cursorFollower');
-    if (!cursor || !follower) return;
+    if (!cursor || follower === null) return;
 
-    let fx = 0, fy = 0;
+    // Detectar dispositivos táctiles: no inicializar cursor custom
+    if (window.matchMedia('(hover: none)').matches) {
+        cursor.style.display = 'none';
+        follower.style.display = 'none';
+        document.body.style.cursor = 'auto';
+        document.querySelectorAll('button, .cat-card, .radio-card, .desc-toggle-btn').forEach(el => {
+            el.style.cursor = 'auto';
+        });
+        return;
+    }
+
+    let mouseX = 0, mouseY = 0;
+    let followerX = 0, followerY = 0;
+    let rafId = null;
 
     document.addEventListener('mousemove', e => {
-        cursor.style.left = e.clientX + 'px';
-        cursor.style.top  = e.clientY + 'px';
-        setTimeout(() => {
-            follower.style.left = e.clientX + 'px';
-            follower.style.top  = e.clientY + 'px';
-        }, 80);
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+        cursor.style.left = mouseX + 'px';
+        cursor.style.top  = mouseY + 'px';
+
+        if (!rafId) {
+            rafId = requestAnimationFrame(animateFollower);
+        }
     });
+
+    function animateFollower() {
+        followerX += (mouseX - followerX) * 0.18;
+        followerY += (mouseY - followerY) * 0.18;
+        follower.style.left = followerX + 'px';
+        follower.style.top  = followerY + 'px';
+        const dist = Math.abs(mouseX - followerX) + Math.abs(mouseY - followerY);
+        rafId = dist > 0.5 ? requestAnimationFrame(animateFollower) : null;
+    }
 
     document.addEventListener('mousedown', () => {
         cursor.classList.add('active');
@@ -109,17 +155,28 @@ function initScrollWatcher() {
 // ============================================================
 //  SCROLL ANIMATIONS (IntersectionObserver)
 // ============================================================
-function initScrollAnimations() {
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
-                observer.unobserve(entry.target);
-            }
-        });
-    }, { threshold: 0.15 });
+// ── Observed set to avoid duplicate registrations ────────
+const _observedEls = new WeakSet();
+let _scrollObserver = null;
 
-    document.querySelectorAll('[data-aos]').forEach(el => observer.observe(el));
+function initScrollAnimations() {
+    if (!_scrollObserver) {
+        _scrollObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    _scrollObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.15 });
+    }
+
+    document.querySelectorAll('[data-aos]').forEach(el => {
+        if (!_observedEls.has(el)) {
+            _observedEls.add(el);
+            _scrollObserver.observe(el);
+        }
+    });
 }
 
 // ============================================================
@@ -535,7 +592,6 @@ function handleCheckoutSubmit(e) {
 
     const msg = buildMessage({ name, phone, address, notes, zone, payment, branch });
     window.open(`https://wa.me/${CONFIG.whatsappNumber.trim()}?text=${encodeURIComponent(msg)}`, '_blank');
-    
 
     setTimeout(() => {
         cart = [];
