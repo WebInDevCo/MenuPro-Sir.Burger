@@ -534,7 +534,8 @@ function handleCheckoutSubmit(e) {
     if (!zone || !payment) { showToast('Completa todos los campos', 'warning'); return; }
 
     const msg = buildMessage({ name, phone, address, notes, zone, payment, branch });
-    window.open(`https://wa.me/${CONFIG.whatsappNumber}?text=${encodeURIComponent(msg)}`, '_blank');
+    window.open(`https://wa.me/${CONFIG.whatsappNumber.trim()}?text=${encodeURIComponent(msg)}`, '_blank');
+    
 
     setTimeout(() => {
         cart = [];
