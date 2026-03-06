@@ -62,7 +62,12 @@ a { text-decoration: none; color: inherit; }
 button { cursor: none; border: none; background: none; font-family: inherit; }
 input, textarea { font-family: inherit; }
 
-/* ── Custom Cursor ───────────────────────────────────── */
+/* ── Custom Cursor (solo dispositivos con hover) ─────── */
+@media (hover: none) {
+  .cursor, .cursor-follower { display: none !important; }
+  body, button, .cat-card, .radio-card, .desc-toggle-btn,
+  .nav-cat-pill, .prod-tab, .add-btn, .qty-btn { cursor: auto !important; }
+}
 .cursor {
   position: fixed;
   width: 8px; height: 8px;
