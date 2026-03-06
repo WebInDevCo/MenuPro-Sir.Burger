@@ -80,7 +80,7 @@
                 "description": "Pan, salchicha long de zenu, ensalada de la casa, mucho queso, papa triturada, cebolla y salsas al gusto.",
                 "price": 17000,
                 "icon": "🌭",
-                "image":"images/hamburguesa-sencilla.jpg"
+                "image":"images/perrogrande.png"
             },
             {
                 "id": "dog-3",
@@ -88,7 +88,7 @@
                 "description": "pan pequeño, saalchicha p.o.p. pequeña de zenu, mucho queso, ensalada de la casa, papa triturada, cebolla y salsas al gusto.",
                 "price": 15000,
                 "icon": "🌭",
-                "image":"images/hamburguesa-sencilla.jpg"
+                "image":"images/perrogrande.png"
             },
             {
                 "id": "dog-4",
@@ -96,7 +96,7 @@
                 "description": "Pan, salchicha americana de zenu, ensalada de la casa, mucho queso, 1 tocineta ahumada, papa triturada, cebolla y salsas al gusto .",
                 "price": 21000,
                 "icon": "🌭",
-                "image":"images/hamburguesa-sencilla.jpg"
+                "image":"images/perroamericano.png"
             },
             {
                 "id": "dog-5",
