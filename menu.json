@@ -1,6 +1,22 @@
 [
-    {
-        "id": 1,
+   {
+        "id": 8,
+        "name": "Promos",
+        "icon": "⌛",
+        "products": [
+            {
+                "id": "promo-1",
+                "name": "Mini Hamburguesas",
+                "description": "4 mini hamburguesas con carne artesanal, nuestra ensalada de la casa y ripio de papa acompañadas con  porción de papa con salsa de queso cheddar y tocineta picada",
+                "price": 23000,
+                "icon": "🍔",
+                "image":"images/minihamburgesas.png"
+            }
+            
+        ]
+    },
+     {
+        "id": 2,
         "name": "Hamburguesas Tradicionales",
         "icon": "🍔",
         "products": [
@@ -31,7 +47,7 @@
         ]
     },
     {
-        "id": 2,
+        "id": 3,
         "name": "Hamburguesas Nuevas",
         "icon": "🍔",
         "products": [
@@ -62,7 +78,7 @@
         ]
     },
     {
-        "id": 3,
+        "id": 4,
         "name": "Perros Calientes",
         "icon": "🌭",
         "products": [
@@ -109,7 +125,7 @@
         ]
     },
     {
-        "id": 4,
+        "id": 5,
         "name": "Salchipapa y Desgranado",
         "icon": "🍟",
         "products": [
@@ -156,7 +172,7 @@
         ]
     },
     {
-        "id": 5,
+        "id": 6,
         "name": "Combos",
         "icon": "🍱",
         "products": [
@@ -203,7 +219,7 @@
         ]
     },
     {
-        "id": 6,
+        "id": 7,
         "name": "Bebidas",
         "icon": "🥤",
         "products": [
@@ -245,7 +261,7 @@
         ]
     },
     {
-        "id": 7,
+        "id": 8,
         "name": "Adiciones",
         "icon": "+",
         "products": [
@@ -308,20 +324,5 @@
             
         ]
     },
-    {
-        "id": 8,
-        "name": "Promos",
-        "icon": "⌛",
-        "products": [
-            {
-                "id": "adi-1",
-                "name": "Mini Hamburguesas",
-                "description": "4 mini hamburguesas con carne artesanal, nuestra ensalada de la casa y ripio de papa acompañadas con  porción de papa con salsa de queso cheddar y tocineta picada",
-                "price": 23000,
-                "icon": "🍔",
-                "image":"images/minihamburgesas.png"
-            }
-            
-        ]
-    }
+    
 ]
