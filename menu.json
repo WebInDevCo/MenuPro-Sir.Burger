@@ -15,7 +15,7 @@
             {
                 "id": "tradi-2",
                 "name": "Hamburguesa Super",
-                "description": "Pan, 2 carne de res, ensaladade la casa, mucho queso x2, 2tocineta ahumada, tomate, papa triturada, cebolla y salsas al gusto.",
+                "description": "Pan, 2 carne de res, ensalada de la casa, mucho queso x2, 2 tocineta ahumadas, tomate, papa triturada, cebolla y salsas al gusto.",
                 "price": 27000,
                 "icon": "🍔",
                 "image":"images/burgersuper.png"
@@ -23,7 +23,7 @@
             {
                 "id": "tradi-3",
                 "name": "Hamburguesa Sencilla",
-                "description": "Pan, carne de res, ensaladade la casa, tomate, papa triturada, cebolla y salsas al gusto.",
+                "description": "Pan, carne de res, ensalada de la casa, tomate, papa triturada, cebolla y salsas al gusto.",
                 "price": 17000,
                 "icon": "🍔",
                 "image":"images/burgersencilla.png"
@@ -38,7 +38,7 @@
             {
                 "id": "burger-1",
                 "name": "Hamburguesa Artesanal",
-                "description": "Pan artesanal, carne artesanal deres, ensalada de la casa, mucho queso, tocineta ahumada, tomate,papa triturada, cebolla y salsas al gusto.",
+                "description": "Pan artesanal, carne artesanal de res, ensalada de la casa, mucho queso, tocineta ahumada, tomate, papa triturada, cebolla y salsas al gusto.",
                 "price": 23500,
                 "icon": "🍔",
                 "image":"images/burgerartesanal.png"
@@ -69,7 +69,7 @@
             {
                 "id": "dog-1",
                 "name": "Perro Especial",
-                "description": "Pan, salchicha long zenu,ensalada de la casa, mucho queso, 2 tocineta ahumada,papa triturada, cebolla y salsas al gusto.",
+                "description": "Pan, salchicha long zenu, ensalada de la casa, mucho queso, 2 tocineta ahumadas, papa triturada, cebolla y salsas al gusto.",
                 "price": 21000,
                 "icon": "🌭",
                 "image":"images/perroespecial.png"
@@ -85,7 +85,7 @@
             {
                 "id": "dog-3",
                 "name": "Perro Pequeño (Niño)",
-                "description": "pan pequeño, saalchicha p.o.p. pequeña de zenu, mucho queso, ensalada de la casa, papa triturada, cebolla y salsas al gusto.",
+                "description": "pan pequeño, salchicha p.o.p. pequeña de zenu, mucho queso, ensalada de la casa, papa triturada, cebolla y salsas al gusto.",
                 "price": 15000,
                 "icon": "🌭",
                 "image":"images/perrogrande.png"
@@ -101,7 +101,7 @@
             {
                 "id": "dog-5",
                 "name": "Perra (Sin Salchicha)",
-                "description": "Pan, 3 tocinetas ahumadas, mucho Queso ensalada de la casa, papa triturada, cebolla y salsas al gusto .",
+                "description": "Pan, 3 tocinetas ahumadas, mucho Queso, ensalada de la casa, papa triturada, cebolla y salsas al gusto .",
                 "price": 21000,
                 "icon": "🌭",
                 "image":"images/perra.png"
@@ -115,8 +115,8 @@
         "products": [
             {
                 "id": "salchi-1",
-                "name": "Chanchipapa",
-                "description": "-300grs. de papa frita - costilla ahumada - salchicha americana - chorizo santarrosano - tocineta ahumada picada - queso mozarella - papa cabello de angel - nuestras salsas.",
+                "name": "Chanchipapa (Para 2)",
+                "description": "- 300grs. de papa frita - costilla ahumada - salchicha americana - chorizo santarrosano - tocineta ahumada picada - queso mozarella - papa cabello de angel - nuestras salsas.",
                 "price": 45000,
                 "icon": "🍟",
                 "image":"images/chanchipapa.png"
@@ -186,7 +186,7 @@
             },
             {
                 "id": "combo-4",
-                "name": "Dou",
+                "name": "Duo",
                 "description": "2 Hamburguesa especial, 2 porción papas (150grs.), 2 gaseosa 250ml. postobon. ",
                 "price": 60000,
                 "icon": "🍱",
@@ -216,20 +216,27 @@
             },
             {
                 "id": "beb-2",
+                "name": "Gaseosa Mini",
+                "description": "",
+                "price": 3000,
+                "icon": "🥤"
+            },
+            {
+                "id": "beb-3",
                 "name": "Jugo Hit 500 Ml",
                 "description": "",
                 "price": 6000,
                 "icon": "🧃"
             },
             {
-                "id": "beb-3",
+                "id": "beb-4",
                 "name": "Agua",
                 "description": "",
                 "price": 6000,
                 "icon": "💧"
             },
             {
-                "id": "beb-4",
+                "id": "beb-5",
                 "name": "Gaseosa 1.5 L",
                 "description": "",
                 "price": 10000,
