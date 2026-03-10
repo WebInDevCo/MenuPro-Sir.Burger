@@ -239,7 +239,7 @@
     },
     {
         "id": 7,
-        "name": "ADICIONES",
+        "name": "Adiciones",
         "icon": "+",
         "products": [
             {
@@ -298,6 +298,23 @@
                 "price": 5000,
                 "icon": "🌭"
             }
+            
+        ]
+    },
+    {
+        "id": 8,
+        "name": "Promos",
+        "icon": "⌛",
+        "products": [
+            {
+                "id": "adi-1",
+                "name": "Carne",
+                "description": "4 mini hamburguesas con carne artesanal, nuestra ensalada de la casa y ripio de papa acompañadas con  porción de papa con salsa de queso cheddar y tocineta picada",
+                "price": 23000,
+                "icon": "🍔",
+                "image":"images/minihamburguesas.png"
+            }
+            
         ]
     }
 ]
