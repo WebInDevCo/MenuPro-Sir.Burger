@@ -6,7 +6,7 @@
 // ── Config ──────────────────────────────────────────────────
 const CONFIG = {
     restaurantName: "Sir.Burger",
-    whatsappNumber: "573215552545 ",
+    whatsappNumber: "573215552545",
     currency: "$",
     branches: [
         { id: 1, name: "Sede Laureles",    desc: "Conjunto al Oxxo",                    icon: "🏪" },
