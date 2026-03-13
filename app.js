@@ -16,7 +16,7 @@ const CONFIG = {
         { id: 1, name: "Zona Oro Negro",  cost: 6000 },
         { id: 2, name: "Zona Laureles",   cost: 5000 },
         { id: 3, name: "Zona Profesionales",     cost: 5000 },
-        { id: 4, name: "Zona Sena Agro",     cost: 6000 },,
+        { id: 4, name: "Zona Sena Agro",     cost: 6000 },
         { id: 5, name: "Zona Centro",     cost: 5000 },
         { id: 6, name: "Zona Plaza Bolivar",     cost: 6000 },
         { id: 7, name: "Zona La Virginia",     cost: 7000 },
